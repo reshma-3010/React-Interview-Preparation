@@ -285,7 +285,8 @@ A callback function can run after another function has finished</p>
 
 
 <h2>29.Why do we need keys in react list?</h2>
-<p></p>
+<p>Keys help React identify which items have changed(added/removed/re-ordered).</p>
+<p>To give a unique identity to every element inside the array,a key is required</p>
 
 
 <h2>30.Do you know about Redux?</h2>
