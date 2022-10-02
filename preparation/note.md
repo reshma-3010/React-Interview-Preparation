@@ -248,3 +248,51 @@ A callback function can run after another function has finished</p>
 <ol>
 <li>componentWillUnmount</li>
 </ol>
+<h2>25.What are Higher Order Components in react js?</h2>
+<p>A higher-order component(HOC) is an advance technique in React for reusing component logic.</p>
+<p>HOC's are not part of the React API.They are a pattern that emerges from React's compositional nature.</p>
+<p>A higher-order component is a function that takes a component as an argument and returns a new component.</p>
+<p>Syntax:const EnchancedComponent=higherOrderComponent(WrappedComponent)</p>
+<p>The reason behind the higher-order component is to share the common functionality between components</p>
+<p>They are similar to Javascript functions used for adding additional functionalities to the existing component.</p>
+
+<h2>26.Do you know about SEO?Is it true that react js supports SEO support</h2>
+<p>Search engine optimisation(SEO) is the process of improving the quality and quantity of website traffic to a website or a web page from search engines.</p>
+<p>SEO targets unpaid traffic(known as "natural" or "organic" results)rather than direct traffic or paid traffic.</p>
+<p>React helps build a very user-friendly UI that is also valuable by SEO,so you definitely shouldn't avoid it while creating a user interface for your app/website.</p>
+<p>However,you should use some tricks to ensure that your React-site is understandable for Google  crawlers and ,therefore,good for SEO.</p>
+
+
+<h2>27.what is clean-up in useEffect?</h2>
+<p>Just like the name implies,the 'useEffect' cleanup is a funtion in the 'useEffect' Hook that allows us to tidy up our code before our component unmounts.</p>
+<p>When our code runs and reruns for every render,'useEffect' also cleans up after itself using the cleanup function.</p>
+<p>The 'useEffect' Hook is built in a way that we can return a function inside it and this return function is where the cleanup
+ happens.</p>
+<p>The cleanup function prevents memory leaks and removes some unnecessary and unwanted behaviour</p>
+<pre>useEffect(() => {
+        effect
+        return () => {
+            cleanup
+        }
+    }, [input])
+    </pre>
+
+<h2>28.What is the use of useCallback and useMemo</h2>
+<p>Fundamentally,useMemo and useCallback are tools built to help us optimize re-renders.</p>
+<p>They do this in two ways:Reducing the amount of work that needs to be done in a given render.</p>
+<p>Reducing the number the times that a component needs to re-render.</p>
+
+
+
+<h2>29.Why do we need keys in react list?</h2>
+<p></p>
+
+
+<h2>30.Do you know about Redux?</h2>
+<p>Redux is a pattern and library for managing and updating application state,using events called "actions".</p>
+<p>It serves as a centralized store for state that needs to be across your entire application,with rules ensuring that the state can only be updated in a predictable fashion.</p>
+<p>Actions are plain Javascript objects that have a type field.Actions only tells us what to do,but they don't tell how to to.</p>
+<p>Reducers are functions that take the current state and an action as an arguments,and return a new state result.</p>
+<p>Store:The Redux store brings together the state,action,and reducers that make up your app.</p>
+<p>It is important to note that you will only have a single store in a Redux application.</p>
+
