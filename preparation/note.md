@@ -297,3 +297,65 @@ A callback function can run after another function has finished</p>
 <p>Store:The Redux store brings together the state,action,and reducers that make up your app.</p>
 <p>It is important to note that you will only have a single store in a Redux application.</p>
 
+<h2>31.What is an event in react?</h2>
+<p>An event is an action that could be triggered as a result of the user action or system generated event.</p>
+<p>For example, a mouse click, loading of a web page, pressing a key, window resizes, and other interactions are called events.</p>
+
+
+<h2>32.What is memory leak and how to overcome.</h2>
+<p>Memory leaks in React applications are primarily a result of not canceling subscriptions made when a component was mounted before the component gets unmounted. These subscriptions could be a: DOM Event Listener. WebSocket Subscription.</p>
+<p>This is a no-op, but it indicates a memory leak in your application. To fix, cancel all subscriptions and asynchronous tasks in a useEffect cleanup function.</p>
+<h2>33.Do you prefer function-based or class component and why?</h2>
+<table>
+<tr>
+<th>Functional Component</th>
+<th>Class Component</th>
+</tr>
+<tr>
+<td>A functional component is just a plain JavaScript pure function that accepts props as an argument and returns a React element(JSX).</td>
+<td>A class component requires you to extend from React. Component and create a render function which returns a React element.</td>
+</tr>
+<tr>
+<td>There is no render method used in functional components.</td>
+<td>It must have the render() method returning JSX (which is syntactically similar to HTML)</td>
+</tr>
+<tr>
+<td>Functional component run from top to bottom and once the function is returned it cant be kept alive.</td>
+<td>Class component is instantiated and different life cycle method is kept alive and being run and invoked depending on phase of class component.</td>
+</tr>
+<tr>
+<td>Also known as Stateless components as they simply accept data and display them in some form, that they are mainly responsible for rendering UI.</td>
+<td>Also known as Stateful components because they implement logic and state.</td>
+</tr>
+<tr>
+<td>React lifecycle methods (for example, componentDidMount) cannot be used in functional components.</td>
+<td>React lifecycle methods can be used inside class components (for example, componentDidMount).</td>
+</tr>
+<tr>
+<td>Hooks can be easily used in functional components to make them Stateful.</td>
+<td>It requires different syntax inside a class component to implement hooks.</td>
+</tr>
+<tr>
+<td>Constructors are not used.</td>
+<td>Constructor are used as it needs to store state</td>
+</tr>
+</table>
+after all these differences i prefer funtional component because it's syntax is easier than class-component.
+<h2>34.Explain reducer as pure function in redux?</h2>
+<p>In Redux, a reducer is a pure function that takes an action and the previous state of the application and returns the new state. The action describes what happened and it is the reducer's job to return the new state based on that action. It may seem simple, but it does have to be a pure function with no side effects.</p>
+<h2>35.Why do you know about redux thunk?</h2>
+<p>Redux Thunk middleware allows you to write action creators that return a function instead of an action. The thunk can be used to delay the dispatch of an action, or to dispatch only if a certain condition is met. The inner function receives the store methods dispatch and getState as parameters.</p>
+
+<h2>36.What do you know about NPM?</h2>
+<p>Npm stands for Node Package Manager. It is a package manager for the Node JavaScript platform.</p>
+<p>Npm is known as the world’s largest software registry. Open-source developers all over the world use npm to publish and share their source code.</p>
+<p>Npm consists of three components:</p>
+<ul>
+<li>The website allows you to find third-party packages, set up profiles, and manage your packages.</li>
+<li>The command-line interface or npm CLI that runs from a terminal to allow you to interact with npm.</li>
+<li>The registry is a large public database of JavaScript code.</li>
+</ul>
+
+
+
+
